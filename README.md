@@ -6,8 +6,8 @@ Project website: http://coconutpl.s3-website.us-east-2.amazonaws.com/
 
 ### Components 
 * Website (in this repo)
-* [a link](https://github.com/CS121Fresh/compiler) Code Compiler
-* [a link](https://github.com/CS121Fresh/runner) Code Runner 
+* [compiler](https://github.com/CS121Fresh/compiler) Code Compiler
+* [runner](https://github.com/CS121Fresh/runner) Code Runner 
 
 ## Architecture
 
