@@ -18,6 +18,8 @@ Project website: http://coconutpl.s3-website.us-east-2.amazonaws.com/
 
 Our interpreter require Python 3. 
 
+## Installation
+??? (Ask Prof. Kate) 
 
 ## Functionality
 
