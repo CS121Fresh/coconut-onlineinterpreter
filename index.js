@@ -29,6 +29,7 @@ editor2.setOptions({
 });
 editor2.renderer.setShowGutter(false);
 
+//dowload function
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -85,7 +86,7 @@ pythonCheckbox.onchange = function() {
   }
 };
 
-//handle
+//adjustable height handle
 var resizeHandle = document.getElementById('handle');
 var editor1Size = document.getElementById('editor');
 var editor2Size = document.getElementById('editor2');
@@ -108,13 +109,6 @@ function stopResizing(e) {
     window.removeEventListener('mouseup', stopResizing, false);
 }
 
-// //Handle resizing 
-// function handleResizeWindow(e){
-//     var newScreenHeight = window.screen.height;
-//     editor1Size.setAttribute('style','height:'+(newScreenHeight * 0.45)+'px;');
-//     editor2Size.setAttribute('style','height:'+(newScreenHeight * 0.45)+'px;');
-// }
-
 //Coconut Wrapper
 (function coconutWrapper($) {
 
@@ -124,7 +118,6 @@ function stopResizing(e) {
         savebutton.addEventListener('mouseout',cancelTip);
         runbutton.addEventListener('mouseover',createTip);
         runbutton.addEventListener('mouseout',cancelTip);
-        //window.addEventListener("resize", handleResizeWindow);
     })()
 
     function sendDataToCoco(interpret = true,filename = null){
@@ -226,6 +219,7 @@ function stopResizing(e) {
 
     });
 
+    //add shortcuts 
     editor.commands.addCommand({
         name: "run",
         bindKey: { win: "Ctrl-R", mac: "Command-R" },

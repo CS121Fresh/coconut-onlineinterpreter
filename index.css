@@ -7,14 +7,6 @@
         width: 80%;
     }
 
-    /* #editor{
-        border: 1px solid lightgray;
-        margin: auto;
-        position: relative;
-        height: 400px;
-        width: 80%;
-    } */
-
     #runbutton {
         color: lightblue;
         cursor: pointer;
