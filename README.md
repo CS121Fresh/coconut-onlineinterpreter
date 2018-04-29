@@ -6,13 +6,13 @@ Project website: http://coconutpl.s3-website.us-east-2.amazonaws.com/
 
 ### Components 
 * Website (in this repo)
-* [compiler](https://github.com/CS121Fresh/compiler) Code Compiler
-* [runner](https://github.com/CS121Fresh/runner) Code Runner 
+* [coconut-compiler](https://github.com/CS121Fresh/compiler) Code Compiler
+* [coocnut-runner](https://github.com/CS121Fresh/runner) Code Runner 
 
 ## Architecture
-
-
-<img align="center" width="450" alt="architecture" src="https://user-images.githubusercontent.com/22512348/39403526-185b1c12-4b33-11e8-81e4-774c1f27b8eb.png">
+<div align="center">
+<img width="500" alt="architecture" src="https://user-images.githubusercontent.com/22512348/39403526-185b1c12-4b33-11e8-81e4-774c1f27b8eb.png">
+</div>
 
 * Front-end is hosted on AWS S3
 * Back-end is hosted on AWS lambda. It compiles and runs code, then return either output or error message
@@ -24,7 +24,10 @@ Project website: http://coconutpl.s3-website.us-east-2.amazonaws.com/
 Our interpreter require Python 3. 
 
 ## Installation
-??? (Ask Prof. Kate) 
+To host the project on AWS, you need to 
+1. __Host a static website on S3__: upload the website code in this repo
+2. __Build a serverless backend using AWS lambda__: creating two lambda functions using code in [compiler](https://github.com/CS121Fresh/compiler) and [runner](https://github.com/CS121Fresh/runner)
+3. __Deploy a RESTful API__: create and depoly your API and update website config
 
 ## Functionality
 
