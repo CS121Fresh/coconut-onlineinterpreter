@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Coconut Interpreter</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    /* #resizable { width: 150px; height: 150px; padding: 0.5em; }
+    #resizable h3 { text-align: center; margin: 0; } */
+    .ui-resizable-ghost { border: 1px dotted gray; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#editor" ).resizable({
+       ghost: true
+    });
+  } );
+  </script> -->
+</head>
+
+<body>
+<h3 align="center">Coconut Interpreter</h3>
+<div height = "80%">
+  <div>
+  <pre id="editor" style="height:400px">"hello, world!" |> print</pre>
+  <div class="arrow-down" id="handle"></div>
+  </div>
+  <div>
+      <button id="runbutton">RUN</button>
+      <button id="savebutton">SAVE</button>
+      <input type="checkbox" id="pythonbutton" value="pythonFile">
+      <label for="pythonbutton">Save as Python</label> 
+  </div>
+  <pre id="editor2" style="height:400px">>>> Welcome to Coconut online Interpreter! 
+>>> Useful shortcuts: Ctrl-R: running current file
+>>>                   Ctrl-S: saving current file
+  </pre>
+</div> 
+<!-- load ace -->
+<script src="src/ace.js"></script>
+<!-- load ace themelist extension -->
+<script src="src/ext-themelist.js"></script>
+<script src="js/vendor/jquery-3.1.0.js"></script>
+<!-- <script src="https://js.arcgis.com/4.3/"></script> -->
+<script src="js/config.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

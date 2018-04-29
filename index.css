@@ -1,0 +1,109 @@
+
+    .ace_editor {
+        border: 1px solid lightgray;
+        margin: auto;
+        position: relative;
+        height: 400px;
+        width: 80%;
+    }
+
+    /* #editor{
+        border: 1px solid lightgray;
+        margin: auto;
+        position: relative;
+        height: 400px;
+        width: 80%;
+    } */
+
+    #runbutton {
+        color: lightblue;
+        cursor: pointer;
+        font: 15px arial;
+        padding: 5px;
+        text-align: center;
+        border: medium solid transparent;
+        display: inline-block;
+        position: relative;
+        left: 10%;
+        
+    }
+
+    #savebutton {
+        color: lightblue;
+        cursor: pointer;
+        font: 15px arial;
+        padding: 5px;
+        text-align: center;
+        border: medium solid transparent;
+        display: inline-block;
+        position: relative;
+        left: 10%;       
+    }
+
+    #pythonbutton{
+        color: lightblue;
+        cursor: pointer;
+        font: 15px arial;
+        border: medium solid transparent;
+        display: inline-block;
+        position: relative;
+        left: 10%;
+    }
+    label{
+        color: lightblue;
+        cursor: pointer;
+        font: 15px arial;
+        border: medium solid transparent;
+        display: inline-block;
+        position: relative;
+        left: 10%;
+    }
+    #handle {
+        cursor: se-resize;
+        position:absolute;
+        right:10.5%;
+    }
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        
+        border-top: 5px solid black;
+    }
+
+    .button:hover {
+        border: medium solid lightgray;
+        border-radius: 1px 1px 1px 1px;
+        box-shadow: 0 0 2px 0 lightblue;
+    }
+
+    .tooltip {    
+        position: absolute;
+        background: #646464;
+        border-radius:4px;
+        padding: 6px 12px;
+        font-family: arial;
+        font-size: 12px;
+        text-shadow: 0px 1px 1px #000;
+        color: #ffc64a;
+    }
+
+    .tooltip:before {
+        content : " ";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #646464;
+        position:absolute;
+        bottom:-5px;
+        left:5px;
+    }
+
+
+    body {
+        font-family: sans-serif;
+        color:#006666;
+        transform: translateZ(0);
+    }
