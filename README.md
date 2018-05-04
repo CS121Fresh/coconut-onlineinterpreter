@@ -24,10 +24,7 @@ Project website: http://coconutpl.s3-website.us-east-2.amazonaws.com/
 Our interpreter require Python 3. 
 
 ## Installation
-For users, all you need to do is
-__open the [website](http://coconutpl.s3-website.us-east-2.amazonaws.com/)__ through the link http://coconutpl.s3-website.us-east-2.amazonaws.com/ 
-
-For developers, to host the project on AWS, you need to 
+To host the project on AWS, you need to 
 1. __Host a static website on S3__: upload the website code in this repo
 2. __Build a serverless backend using AWS lambda__: creating two lambda functions using code in [compiler](https://github.com/CS121Fresh/compiler) and [runner](https://github.com/CS121Fresh/runner)
 3. __Deploy a RESTful API__: create and depoly your API and update website config
@@ -43,7 +40,20 @@ For developers, to host the project on AWS, you need to
 
 * __Cold Start__: AWS lambda has an issue with cold start, so if the server is not used in around 40 min, lambda will become inactive, and results a slow runtime for next execution. A possible solution is to build a serverless back end that calls our server every 20 min. This is still in implementation
 
-* __Interactive code__: We currently do not support code that takes in user inputs
+* __Interactive code__:We currently do not support code that takes in user inputs. When user have infinite loop, we can only tell user then it's time out, and we are unable to tell more information about the loop. for example:
+```
+while True:
+    print(1)
+```
+The interprether only show timeout after 25 seconds, but it will not print will looping.
+
+* __Incomplete statement__: Our error handler can not handle errors with incomplete statement. For example
+```
+"hello |> print
+```
+will be treated as incomplete string, and the console will only show Loading.
+
+* __Distinguishing Coconut and Python__: The interpreter currently is unable to distinguish Coconut and Python input from user.
 
 
 ## Contributing
