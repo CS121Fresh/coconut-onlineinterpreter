@@ -24,7 +24,10 @@ Project website: http://coconutpl.s3-website.us-east-2.amazonaws.com/
 Our interpreter require Python 3. 
 
 ## Installation
-To host the project on AWS, you need to 
+For users, all you need to do is
+__open the [website](http://coconutpl.s3-website.us-east-2.amazonaws.com/)__ through the link http://coconutpl.s3-website.us-east-2.amazonaws.com/ 
+
+For developers, to host the project on AWS, you need to 
 1. __Host a static website on S3__: upload the website code in this repo
 2. __Build a serverless backend using AWS lambda__: creating two lambda functions using code in [compiler](https://github.com/CS121Fresh/compiler) and [runner](https://github.com/CS121Fresh/runner)
 3. __Deploy a RESTful API__: create and depoly your API and update website config
